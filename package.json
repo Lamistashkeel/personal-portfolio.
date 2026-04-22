@@ -1,0 +1,27 @@
+{
+  "name": "personal-portfolio2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-bootstrap": "^2.10.10",
+    "react-bootstrap-icons": "^1.11.6",
+    "react-dom": "19.2.4",
+    "react-multi-carousel": "^2.8.6",
+    "react-on-screen": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4"
+  }
+}
