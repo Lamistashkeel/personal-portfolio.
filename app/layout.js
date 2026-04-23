@@ -5,9 +5,9 @@ import './globals.css';
 
 export const metadata = {
   metadataBase: new URL('https://personal-portfolio-lamis-iota.vercel.app'), // ← your Vercel URL for now
-  title: 'Lamis Tashkeel',
+  title: 'Lamis-Portfolio',
   
-  description: 'Full Stack AI-driven MERN Developer & Data Analyst based in Karachi.',
+  description: 'Full Stack AI-driven MERN Developer',
   openGraph: {
     title: 'Lamis | Portfolio',
     description: 'Full Stack AI-driven MERN Developer & Data Analyst.',
