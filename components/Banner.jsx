@@ -65,6 +65,8 @@ export const Banner = () => {
         quality={80}
       />
 
+    
+
       {/* ← ADD: wrapper pushes content above the background image */}
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Container>

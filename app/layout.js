@@ -2,8 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 import './globals.css';
 
+
 export const metadata = {
+  metadataBase: new URL('https://personal-portfolio-lamis-iota.vercel.app'), // ← your Vercel URL for now
   title: 'Lamis Tashkeel | AI + MERN Developer',
+  
   description: 'Full Stack AI-driven MERN Developer & Data Analyst based in Karachi.',
   openGraph: {
     title: 'Lamis Tashkeel | Portfolio',
