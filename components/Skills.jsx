@@ -40,25 +40,25 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>MERN Stack (MongoDB, Express.js, React, Node.js), REST APIs, JavaScript, HTML, CSS, Responsive Design,<br/>
-              Python (Pandas, Matplotlib, Seaborn), Data Analysis, EDA, Data Visualization, Excel,
-              Git, GitHub, Postman</p>
+              <p>HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, Tailwind CSS, Bootstrap, Responsive Design, REST API Integration,<br/>
+              Python (Pandas, Matplotlib, Seaborn), Data CLeaning & Analysis, EDA, Data Visualization, Excel,
+              Git, GitHub, Thunderclient</p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <Image src="/assets/img/meter1.svg" alt="Skill meter" width={100} height={100} />  {/* ← CHANGE */}
-                  <h5>AI + (MERN) Developer</h5>
+                  <h5>Web Development</h5>
                 </div>
                 <div className="item">
                   <Image src="/assets/img/meter2.svg" alt="Skill meter" width={100} height={100} />  {/* ← CHANGE */}
-                  <h5>Data analysis and visualization</h5>
+                  <h5>AI + Frontend Development </h5>
                 </div>
                 <div className="item">
                   <Image src="/assets/img/meter3.svg" alt="Skill meter" width={100} height={100} />  {/* ← CHANGE */}
-                  <h5>Data analyst</h5>
+                  <h5>Data analysis and visualization</h5>
                 </div>
                 <div className="item">
                   <Image src="/assets/img/meter1.svg" alt="Skill meter" width={100} height={100} />  {/* ← CHANGE */}
-                  <h5>Web app Development</h5>
+                  <h5>Data analyst</h5>
                 </div>
               </Carousel>
             </div>

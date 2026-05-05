@@ -4,11 +4,6 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";   // ← CHANGE: replaces all 4 svg imports below
 
-// ← DELETE all 4 of these:
-// import logo from '../assets/img/logo.svg';
-// import navIcon1 from '../assets/img/nav-icon1.svg';
-// import navIcon2 from '../assets/img/nav-icon2.svg';
-// import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');

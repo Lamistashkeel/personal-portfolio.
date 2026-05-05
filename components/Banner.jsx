@@ -65,8 +65,8 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </span>
                 </h1>
-                <p>I'm AI-driven MERN Stack Developer building scalable Web Apps, SaaS using
-                  MongoDB, Express.js, React, and Node.js, with a focus on creating responsive
+                <p>I'm AI-driven Frontend Developer experienced in building responsive web applications and landing pages using
+HTML5, CSS3, JavaScript, React.js, and Next.js. Skilled in converting UI/UX designs into clean, userfriendly interfaces with Tailwind CSS and Bootstrap, with a focus on creating responsive
                   interfaces and efficient, scalable systems. I also work as a data analyst,
                   transforming raw data through cleaning and preprocessing, then turning it into
                   clear, professional visualizations using Python (Pandas, Matplotlib, Seaborn)

@@ -1,52 +1,64 @@
-'use client';  // ← ADD THIS (line 1, brand new)
+'use client';
 
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-// ← DELETE all 7 of these imports:
-// import projImg1 from "../assets/img/project-img1.png";
-// import projImg2 from "../assets/img/project-img2.png";
-// import projImg3 from "../assets/img/project-img3.png";
-// import projImg4 from "../assets/img/project-img4.png";
-// import projImg5 from "../assets/img/project-img5.png";
-// import projImg6 from "../assets/img/project-img6.png";
-// import colorSharp2 from "../assets/img/color-sharp2.png";  ← was imported but never used anyway
-
 export const Projects = () => {
 
-  const projects = [
+  const webProjects = [
     {
       title: "Ecommerce Website",
       description: "Design & Development",
-      imgUrl: "/assets/img/project-img1.png",   // ← CHANGE: was projImg1
-      githubUrl: "https://github.com/Lamistashkeel/Amazon-clone",
+      imgUrl: "/assets/img/project-web-img1.png",
+
     },
     {
       title: "AI Customer Support SaaS",
-      description: "(Smart Chatbot + Ticket Automation)",
-      imgUrl: "/assets/img/project-img2.png",   // ← CHANGE: was projImg2
+      description: "Smart Chatbot + Ticket Automation",
+      imgUrl: "/assets/img/project-web-img2.png",
     },
     {
-      title: "Personal-finance-management-system",
-      description: "planner & budgeting app",
-      imgUrl: "/assets/img/project-img3.png",   // ← CHANGE: was projImg3
+      title: "Personal Finance Management System",
+      description: "Planner & budgeting app",
+      imgUrl: "/assets/img/project-web-img3.png",
     },
     {
-      title: "Climate-data-analysis",
+      title: "Ms-Skin-Cinic",                         // ← add your real 4th web project title
+      description: "skin-Clinic_website",
+      imgUrl: "/assets/img/project-web-img4.png",
+      liveUrl: "https://ms-skin-clinic.vercel.app/",  
+    },
+    {
+      title: "Auto-Repair-Shop",                      // ← add your real 5th web project title
+      description: "car-repair-website",
+      imgUrl: "/assets/img/project-web-img5.png",
+      liveUrl: " https://canadian-auto.vercel.app/", 
+     
+    },
+    // {
+    //   title: "Portfolio Website",                   // ← add your real 6th web project title
+    //   description: "Next.js + Bootstrap",
+    //   imgUrl: "/assets/img/project-web-img6.png",
+    // },
+  ];
+
+  const dataProjects = [
+    {
+      title: "Climate Data Analysis",
       description: "Data analysis and visualization",
-      imgUrl: "/assets/img/project-img4.png",   // ← CHANGE: was projImg4
+      imgUrl: "/assets/img/project-img1.png",
     },
     {
-      title: "solar-power-generation-analysis",
+      title: "Solar Power Generation Analysis",
       description: "Data analysis and visualization",
-      imgUrl: "/assets/img/project-img5.png",   // ← CHANGE: was projImg5
+      imgUrl: "/assets/img/project-img2.png",
     },
     {
       title: "Zameen.com Real Estate Data Analysis",
       description: "Data analysis and visualization",
-      imgUrl: "/assets/img/project-img6.png",   // ← CHANGE: was projImg6
+      imgUrl: "/assets/img/project-img3.png",
     },
   ];
 
@@ -59,29 +71,39 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Projects</h2>
-                <p>I've developed a range of full-stack web applications, including a budgeting planner, management system, online store, and a weather app that integrates live APIs for real-time forecasts all built with a focus on performance, usability, and responsive design.
+                <p>I've developed a range of frontend applications, including a Finance Management System, E-commerce 
+Website, Skin Clinic Website, and Auto/Car Repair Shop Website. All built with a focus on performance, usability, and responsive design.
 
 In data analysis and visualization, I've worked on exploratory data analysis (EDA) projects involving real estate trends, climate data, and solar power generation, transforming raw datasets into meaningful insights through data cleaning, analysis, and professional visualizations.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Web Projects</Nav.Link>   {/* ← optional: better label than "Tab 1" */}
+                      <Nav.Link eventKey="first">Web Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Data Projects</Nav.Link> {/* ← optional: better label than "Tab 2" */}
+                      <Nav.Link eventKey="second">Data Projects</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+
+                    {/* ← 6 web projects */}
                     <Tab.Pane eventKey="first">
                       <Row>
-                        {projects.map((project, index) => (
+                        {webProjects.map((project, index) => (
                           <ProjectCard key={index} {...project} />
                         ))}
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">  {/* ← CHANGE: was eventKey="section" which was a bug, never matched "Tab 2" */}
-                      <p>-</p>
+
+                    {/* ← 3 data projects */}
+                    <Tab.Pane eventKey="second">
+                      <Row>
+                        {dataProjects.map((project, index) => (
+                          <ProjectCard key={index} {...project} />
+                        ))}
+                      </Row>
                     </Tab.Pane>
+
                   </Tab.Content>
                 </Tab.Container>
               </div>}
