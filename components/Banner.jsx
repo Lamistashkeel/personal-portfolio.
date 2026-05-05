@@ -43,7 +43,7 @@ export const Banner = () => {
     <section className="banner" id="home" style={{ position: 'relative', overflow: 'hidden' }}>
 
       <Image
-        src="/assets/img/banner-bg.png"
+        src="/assets/img/banner-bg.webp"
         alt=""
         fill
         className="banner-bg"
