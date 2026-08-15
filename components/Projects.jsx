@@ -8,22 +8,18 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const webProjects = [
-    {
-      title: "Ecommerce Website",
-      description: "Design & Development",
-      imgUrl: "/assets/img/project-web-img1.png",
+    // {
+    //   title: "Ecommerce Website",
+    //   description: "Design & Development",
+    //   imgUrl: "/assets/img/project-web-img1.png",
 
-    },
-    {
-      title: "AI Customer Support SaaS",
-      description: "Smart Chatbot + Ticket Automation",
-      imgUrl: "/assets/img/project-web-img2.png",
-    },
-    {
-      title: "Personal Finance Management System",
-      description: "Planner & budgeting app",
-      imgUrl: "/assets/img/project-web-img3.png",
-    },
+    // },
+    // {
+    //   title: "AI Customer Support SaaS",
+    //   description: "Smart Chatbot + Ticket Automation",
+    //   imgUrl: "/assets/img/project-web-img2.png",
+    // },
+
     {
       title: "Ms-Skin-Cinic",                         // ← add your real 4th web project title
       description: "skin-Clinic_website",
@@ -37,11 +33,16 @@ export const Projects = () => {
       liveUrl: " https://canadian-auto.vercel.app/", 
      
     },
-    // {
-    //   title: "Portfolio Website",                   // ← add your real 6th web project title
-    //   description: "Next.js + Bootstrap",
-    //   imgUrl: "/assets/img/project-web-img6.png",
-    // },
+      {
+     title: "Digital agency Landing page",                   // ← add your real 6th web project title
+     description: "Next.js + TypeScript + Tailwind",
+      imgUrl: "/assets/img/project-web-img6.png",
+    },
+        {
+      title: "Personal Finance Management System",
+      description: "Planner & budgeting app",
+      imgUrl: "/assets/img/project-web-img3.png",
+    },
   ];
 
   const dataProjects = [
